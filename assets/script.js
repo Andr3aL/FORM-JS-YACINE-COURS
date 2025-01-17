@@ -61,7 +61,7 @@ myForm.addEventListener("submit", function(event){
 
 
     } else {
-        
+
         document.querySelector("#pseudoError").classList.add("d-none");
         document.querySelector(".iconePseudo").classList.remove("d-none");
         inputPseudo.classList.add("text-success");
@@ -82,8 +82,16 @@ myForm.addEventListener("submit", function(event){
 
         document.querySelector("#emailError").classList.add("error");
         document.querySelector("#emailError").classList.remove("d-none");
+        document.querySelector(".iconeEmail").classList.remove("d-none");
+        document.querySelector(".iconeEmail").style.color="red";
 
-    } 
+    } else {
+        document.querySelector("#emailError").classList.add("d-none");
+        document.querySelector(".iconeEmail").classList.remove("d-none");
+        inputEmail.classList.add("text-success");
+        document.querySelector(".iconeEmail").classList.replace("bi-x", "bi-check");
+        document.querySelector(".iconeEmail").style.color="green";
+    }
 
 
     // ********** On traite le mot de passe ici *************
@@ -93,8 +101,16 @@ myForm.addEventListener("submit", function(event){
 
         document.querySelector("#passwordError").classList.add("error");
         document.querySelector("#passwordError").classList.remove("d-none");
+        document.querySelector(".iconePassword").classList.remove("d-none");
+        document.querySelector(".iconePassword").style.color="red";
 
-    } 
+    } else {
+        document.querySelector("#passwordError").classList.add("d-none");
+        document.querySelector(".iconePassword").classList.remove("d-none");
+        inputPassword.classList.add("text-success");
+        document.querySelector(".iconePassword").classList.replace("bi-x", "bi-check");
+        document.querySelector(".iconePassword").style.color="green";
+    }
 
 });
 
