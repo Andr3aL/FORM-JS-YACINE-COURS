@@ -61,6 +61,8 @@ myForm.addEventListener("submit", function(event){
 
 
     } else {
+        
+        document.querySelector("#pseudoError").classList.add("d-none");
         document.querySelector(".iconePseudo").classList.remove("d-none");
         inputPseudo.classList.add("text-success");
         document.querySelector(".iconePseudo").classList.replace("bi-x", "bi-check");
