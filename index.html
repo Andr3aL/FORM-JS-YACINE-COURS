@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>formulaire en JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+
+  <body>
+
+    <main class="container my-5">
+
+        <h1>formulaire</h1>
+
+        <form action="" method="">
+
+            <div class="mb-3">
+                
+                <i class="bi bi-person-fill fs-5"></i>
+                <label for="pseudo" class="form-label">Pseudo</label>
+                <div class="positionPseudo">
+                    <input type="text" class="form-control" id="pseudo" placeholder="Votre pseudo">
+                    <i class="bi bi-x iconePseudo d-none"></i>
+                </div>
+                <p id="pseudoError" class="d-none">Le pseudo n'est pas valide</p>
+            </div>
+
+            <div class="mb-3">
+                <i class="bi bi-envelope-fill fs-5"></i>
+                <label for="email" class="form-label">Email</label>
+                <div class="positionEmail">
+                    <input type="text" class="form-control" id="email" placeholder="Votre email">
+                    <i class="bi bi-x iconeEmail d-none"></i>
+                </div>
+                <p id="emailError" class="d-none">Le mail n'est pas valide</p>
+            </div>
+
+            <div class="mb-3">
+                <i class="bi bi-lock-fill fs-5"></i>
+                <label for="password" class="form-label">Mot de passe</label>
+                <div class="positionMdp">
+                    <input type="password" class="form-control" id="password" placeholder="Votre mot de passe">
+                    <!-- <i class="bi bi-x iconePassword d-none"></i> -->
+                    <i id="show" class="bi bi-eye-slash-fill iconeMdp"></i>
+                </div>
+                <p id="passwordError" class="d-none">Le mot de passe n'est pas valide</p>
+            </div>
+                                          
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+
+        </form>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+
+</html>
