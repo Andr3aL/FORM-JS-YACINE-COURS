@@ -1,0 +1,51 @@
+.error {
+    width: 90%;
+    background-color: pink;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  main {
+    box-shadow: 2px 2px 10px rgba(74, 72, 72, 0.248);
+  }
+  
+  /* Pseudo, Email, Password | Classe parent */
+  .positionMdp,
+  .positionPseudo,
+  .positionEmail {
+    position: relative;
+  }
+  
+  /* PSEUDO */
+  .pseudoIcon {
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    font-size: 1.5em;
+  }
+  
+  /* EMAIL */
+  .emailIcon {
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    font-size: 1.5em;
+  }
+  
+  /* MDP */
+  .mdpIcon {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+  }
+  
+  /* ---------------------------------------------------------------- */
+  
+  #logBg {
+    background: url(../img/photo-1534432182912-63863115e106.avif) no-repeat center
+      center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+  
